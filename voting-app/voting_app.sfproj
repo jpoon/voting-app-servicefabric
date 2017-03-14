@@ -26,6 +26,16 @@
     <None Include="Scripts\Deploy-FabricApplication.ps1" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\result\**\*.*">
+      <Link>ApplicationPackageRoot\resultPkg\Code\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="..\result\**\*.*">
+      <Link>ApplicationPackageRoot\resultPkg\Code\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="ApplicationPackageRoot\resultPkg\Config\Settings.xml" />
+    <Content Include="ApplicationPackageRoot\resultPkg\ServiceManifest.xml" />
+    <Content Include="ApplicationPackageRoot\workerPkg\Config\Settings.xml" />
+    <Content Include="ApplicationPackageRoot\workerPkg\ServiceManifest.xml" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
