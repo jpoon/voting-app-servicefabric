@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "voting_app", "voting-app\voting_app.sfproj", "{1EF3E3D7-E69F-4A0A-B114-B591F73802FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vote", "vote\vote.csproj", "{8D3EBE84-DC61-47F3-8307-55A61C35F958}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "worker", "vote\worker.csproj", "{8D3EBE84-DC61-47F3-8307-55A61C35F958}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "result", "result\result.njsproj", "{D5C3004D-9C4A-440E-8EE6-CF6657F64550}"
 EndProject

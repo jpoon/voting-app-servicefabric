@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceManifest Name="workerPkg"
+<ServiceManifest Name="votePkg"
                  Version="1.0.0"
                  xmlns="http://schemas.microsoft.com/2011/01/fabric"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -7,15 +7,15 @@
   <ServiceTypes>
     <!-- This is the name of your ServiceType.
          The UseImplicitHost attribute indicates this is a guest service. -->
-    <StatelessServiceType ServiceTypeName="workerType" UseImplicitHost="true" />
+    <StatelessServiceType ServiceTypeName="voteType" UseImplicitHost="true" />
   </ServiceTypes>
 
   <!-- Code package is your service executable. -->
-  <CodePackage Name="workerPkg.Code" Version="1.0.0">
+  <CodePackage Name="votePkg.Code" Version="1.0.0">
     <EntryPoint>
       <!-- Follow this link for more information about deploying Windows containers to Service Fabric: https://aka.ms/sfguestcontainers -->
       <ContainerHost>
-        <ImageName>japoonregistry-microsoft.azurecr.io/voting-app/worker:latest</ImageName>
+        <ImageName>japoonregistry-microsoft.azurecr.io/voting-app/vote:latest</ImageName>
       </ContainerHost>
     </EntryPoint>
     <!-- Pass environment variables to your container: -->
@@ -32,7 +32,7 @@
       <!-- This endpoint is used by the communication listener to obtain the port on which to 
            listen. Please note that if your service is partitioned, this port is shared with 
            replicas of different partitions that are placed in your code. -->
-      <Endpoint Name="workerTypeEndpoint" UriScheme="http" Port="4000" />
+      <Endpoint Name="voteTypeEndpoint" UriScheme="http" Port="4000" />
     </Endpoints>
   </Resources>
 </ServiceManifest>

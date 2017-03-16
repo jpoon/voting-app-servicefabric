@@ -34,12 +34,12 @@
     </Content>
     <Content Include="ApplicationPackageRoot\resultPkg\Config\Settings.xml" />
     <Content Include="ApplicationPackageRoot\resultPkg\ServiceManifest.xml" />
-    <Content Include="ApplicationPackageRoot\workerPkg\Config\Settings.xml" />
-    <Content Include="ApplicationPackageRoot\workerPkg\ServiceManifest.xml" />
+    <Content Include="ApplicationPackageRoot\votePkg\Config\Settings.xml" />
+    <Content Include="ApplicationPackageRoot\votePkg\ServiceManifest.xml" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\vote\vote.csproj" />
+    <ProjectReference Include="..\vote\worker.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>

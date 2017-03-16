@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace vote
 {
-    [EventSource(Name = "MyCompany-voting_app-vote")]
+    [EventSource(Name = "voting_app-worker")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();
